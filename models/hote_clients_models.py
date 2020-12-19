@@ -1,1 +1,2 @@
-print("hola")
+from pydantic import BaseModel
+
