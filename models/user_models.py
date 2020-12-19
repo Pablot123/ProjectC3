@@ -1,13 +1,18 @@
 from pydantic import BaseModel
-class UserIn(BaseModel):
+class ConsultarReserva(BaseModel):
     email: str
-    password: str
+    numero_documento: int
 
-class UserAdd(BaseModel):
+
+class AgregarReserva(BaseModel):
     nombre: str
     apellido: str
     email: str
     tipo_documento: str
     numero_documento: int
     numero_celular: int
-    password: str
+    date_in: str
+    date_out: str
+    num_childs: int
+    num_adults: int
+    tipo_acomodacion: str
